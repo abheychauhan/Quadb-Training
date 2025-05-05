@@ -1,17 +1,26 @@
 import React from 'react'
 import lighttop from '../assets/Light Top.png'
 import indicator from '../assets/Active Indicator.png'
-import { div, image, img } from 'framer-motion/client'
+import pic1 from '../assets/pic1.png'
+import pic2 from '../assets/pic2.png'
+import pic3 from '../assets/pic3.png'
+import pic4 from '../assets/pic4.png'
+import pic5 from '../assets/pic5.png'
+import pic6 from '../assets/pic6.png'
+import pic7 from '../assets/pic7.png'
+
+
 
 
 const pics =[ 
-    "/src/assets/pic1.png",
-    "/src/assets/pic2.png",
-    "/src/assets/pic3.png",
-    "/src/assets/pic4.png",
-    "/src/assets/pic5.png",
-    "/src/assets/pic6.png",
-    "/src/assets/pic7.png",
+           pic1,
+           pic2,
+           pic3,
+           pic4,
+           pic5,
+           pic6,
+           pic7,
+
 ]
 
 

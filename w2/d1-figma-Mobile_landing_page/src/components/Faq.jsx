@@ -2,6 +2,12 @@ import { div, h1 } from "framer-motion/client";
 import React, { useState } from "react";
 import indicator from '../assets/Active Indicator.png'
 import faqimg from '../assets/faqBitmap.png'
+import logo_dummy1 from '../assets/logo_dummy1.png'
+import logo_dummy2 from '../assets/logo_dummy2.png'
+import logo_dummy3 from '../assets/logo_dummy3.png'
+import logo_dummy4 from '../assets/logo_dummy4.png'
+import logo_dummy5 from '../assets/logo_dummy5.png'
+import logo_dummy6 from '../assets/logo_dummy6.png'
 
 
 const faqData = [
@@ -31,12 +37,12 @@ const faqData = [
 
 
 const images = [
-    {path:'/src/assets/logo_dummy1.png', id :'1'},
-    {path:'/src/assets/logo_dummy2.png', id :'2'},
-    {path:'/src/assets/logo_dummy3.png', id :'3'},
-    {path:'/src/assets/logo_dummy4.png', id :'4'},
-    {path:'/src/assets/logo_dummy5.png', id :'5'},
-    {path:'/src/assets/logo_dummy6.png', id :'6'}
+    {path:logo_dummy1, id :'1'},
+    {path:logo_dummy2, id :'2'},
+    {path:logo_dummy3, id :'3'},
+    {path:logo_dummy4, id :'4'},
+    {path:logo_dummy5, id :'5'},
+    {path:logo_dummy6, id :'6'}
  
     
 ]

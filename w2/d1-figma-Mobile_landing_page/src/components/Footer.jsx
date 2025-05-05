@@ -25,20 +25,20 @@ const newsItems = [
     {
         type: "HEADLINE",
         title: "Sed imperdiet enim ligula, vitae viverra justo.",
-        img: n1, // Red bird
+        img: n1, 
         link: "#",
         large: true,
     },
     {
         type: "NEWS",
         title: "Sed imperdiet enim ligula, vitae viverra justo porta vel.",
-        img: n2, // Sky
+        img: n2, 
         link: "#",
     },
     {
         type: "NEWS",
         title: "Sed imperdiet enim ligula, vitae viverra justo porta vel.",
-        img: n3, // City
+        img: n3, 
         link: "#",
     },
 ];
