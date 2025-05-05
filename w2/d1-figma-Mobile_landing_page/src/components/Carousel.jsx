@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import m1 from '../assets/m1.png';
+import m2 from '../assets/m2.png';
+import m3 from '../assets/m3.png';
+import m4 from '../assets/m4.png';
+import m5 from '../assets/m5.png';
 
 const images = [
-  "/src/assets/m1.png",
-  "/src/assets/m2.png",
-  "/src/assets/m3.png",
-  "/src/assets/m4.png",
-  "/src/assets/m5.png",
+  m1,
+  m2,
+  m3,
+  m4,
+  m5
 ];
 
 const Carousel = () => {
