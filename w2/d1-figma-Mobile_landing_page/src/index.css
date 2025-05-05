@@ -4,6 +4,9 @@
 html {
   scroll-behavior: smooth;
 }
+body{
+  font-family: Open sans ;
+}
 body::-webkit-scrollbar {
   display: none;
 }
