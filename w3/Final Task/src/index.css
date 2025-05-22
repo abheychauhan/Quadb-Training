@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll 19s linear infinite;
+}
+
+.marquee-content {
+  display: flex;
+}
+
+.marquee-content span {
+  padding:15px;
+  font-size: 35px;
+  white-space: nowrap;
+  font-weight: 600;
+  color: white;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.style{
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+}
