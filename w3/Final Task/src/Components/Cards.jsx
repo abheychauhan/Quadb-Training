@@ -2,6 +2,8 @@ import React from 'react';
 
 const Cards = () => {
   return (
+    <>
+    
     <div className="min-h-screen px-8 py-16  text-white font-sans">
       {/* Heading */}
       <div className="text-center mb-16">
@@ -15,7 +17,7 @@ const Cards = () => {
             passion.
           </span>
         </h2>
-                <div className='flex items-center justify-center mt-10'>
+        <div className='flex items-center justify-center mt-10'>
           <div className='w-3 h-3 rounded-full bg-white'></div>
           <div className='w-100 h-1 bg-white'></div>
           <div className='w-3 h-3 rounded-full bg-white'></div>
@@ -26,7 +28,7 @@ const Cards = () => {
 
       {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 px-4">
-        
+
         <div className="bg-white/10 backdrop-blur-md p-10 rounded-2xl w-full border border-white/20 shadow-lg">
           <h4 className="text-xl font-bold mb-2">Restaurant POS</h4>
           <p className="text-lg text-gray-200 leading-relaxed">
@@ -37,7 +39,7 @@ const Cards = () => {
           </p>
         </div>
 
-        
+
         <div className="bg-white/10 backdrop-blur-md p-10 rounded-2xl w-full border border-white/20 shadow-lg">
           <h4 className="text-xl font-bold mb-2">HRM</h4>
           <p className="text-lg text-gray-200 leading-relaxed">
@@ -46,7 +48,7 @@ const Cards = () => {
             tools. It also offers an employee self-service portal for seamless interaction.
           </p>
         </div>
-         <div className="bg-white/10 backdrop-blur-md p-10 rounded-2xl w-full border border-white/20 shadow-lg">
+        <div className="bg-white/10 backdrop-blur-md p-10 rounded-2xl w-full border border-white/20 shadow-lg">
           <h4 className="text-xl font-bold mb-2">Restaurant POS</h4>
           <p className="text-lg text-gray-200 leading-relaxed">
             A Point of Sale for the Restaurant to ease the process of taking orders. Not just a POS,
@@ -56,7 +58,7 @@ const Cards = () => {
           </p>
         </div>
 
-    
+
         <div className="bg-white/10 backdrop-blur-md p-10 rounded-2xl w-full border border-white/20 shadow-lg">
           <h4 className="text-xl font-bold mb-2">HRM</h4>
           <p className="text-lg text-gray-200 leading-relaxed">
@@ -66,7 +68,12 @@ const Cards = () => {
           </p>
         </div>
       </div>
+
     </div>
+        <div className='p-[2px] bg-gradient-to-r rounded-full r from-[#DCE748] to-[#288069] mt-10'>
+        <button className='p-4 w-fit block rounded-full bg-[#6A7282]  text-xl px-7 '>Book a Demo</button>
+      </div>
+    </>
   );
 };
 

@@ -22,7 +22,7 @@ const Animations = () => {
           end: "bottom 5%",
           scrub: 1,
 
-          
+
         },
         motionPath: {
           path: "#customPath",
@@ -34,7 +34,7 @@ const Animations = () => {
       });
     });
 
-    gsap.to(boxRef.current , {
+    gsap.to(boxRef.current, {
       scrollTrigger: {
         trigger: '#box',
         start: "top 90%",
@@ -48,7 +48,7 @@ const Animations = () => {
       stagger: 0.2,
     });
 
-      gsap.to(box1Ref.current , {
+    gsap.to(box1Ref.current, {
       scrollTrigger: {
         trigger: box1Ref.current,
         start: "top 65%",
@@ -81,40 +81,40 @@ const Animations = () => {
       opacity: 1,
     });
 
-     gsap.fromTo(
-        box2Ref.current,
-        { x: 1000, opacity: 0 }, // Initial state
-        {
-          x: 0,
-          opacity: 1,
-          duration: 1,
-          scrollTrigger: {
-            trigger: box2Ref.current,
-            start: "top 70%",
-            end: "bottom 50%",
-            scrub: true,
-
-
-          },
-        }
-      );
-      
-      gsap.to("#box2", {
+    gsap.fromTo(
+      box2Ref.current,
+      { x: 1000, opacity: 0 }, 
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
         scrollTrigger: {
-          trigger: "#box2",
-          start: "top 55%",
-          end: "bottom 45%",
+          trigger: box2Ref.current,
+          start: "top 70%",
+          end: "bottom 50%",
+          scrub: true,
+
+
+        },
+      }
+    );
+
+    gsap.to("#box2", {
+      scrollTrigger: {
+        trigger: "#box2",
+        start: "top 55%",
+        end: "bottom 45%",
         scrub: true,
       },
       opacity: 1,
     });
 
     return () => {
-       ctx.revert()
-       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      ctx.revert()
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
 
-  
+
   }, []);
 
   return (
@@ -124,17 +124,17 @@ const Animations = () => {
         <h3 className="text-center text-3xl">We love taking your vision to reality. Here's how we work:</h3>
       </div>
 
-    <svg
-    width="1581px"
-    height="1250px"
-    viewBox="-100 -15 1491 1099"
-    fill="none"
-    className=" hidden lg:block svg"
-  >
-    <rect  className="lg:w-1281 lg:h-1090 w-full h-full" fill="transparent" />
-    <path
-      id="customPath"
-      d="
+      <svg
+        width="1581px"
+        height="1250px"
+        viewBox="-100 -15 1491 1099"
+        fill="none"
+        className=" hidden lg:block svg"
+      >
+        <rect className="lg:w-1281 lg:h-1090 w-full h-full" fill="transparent" />
+        <path
+          id="customPath"
+          d="
         M625,1.5 
         L1271,2.5 
         L1280.5,261 
@@ -146,47 +146,47 @@ const Animations = () => {
         L1280.4,818.7 
         L1280.5,1049 
         L0,1049.5"
-      stroke="white"
-      fill="none"
-    />
+          stroke="white"
+          fill="none"
+        />
 
-      <defs>
-        <linearGradient id="redGradient" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#DCE748" />
-          <stop offset="100%" stopColor="#288069" />
-        </linearGradient>
-      </defs>
+        <defs>
+          <linearGradient id="redGradient" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#DCE748" />
+            <stop offset="100%" stopColor="#288069" />
+          </linearGradient>
+        </defs>
         <circle ref={circleRef} r="25" className="" fill="url(#redGradient)" />
 
-  </svg>
+      </svg>
 
-  <div className="w-[100%]   overflow-hidden absolute lg:top-[30%] lg:left-[45%] top-[35%] left-[5%]">
-    <div  className="w-full flex flex-col gap-5 ">
-      <h1 ref={boxRef} className="text-4xl ml-[-800px] w-full">We create technologies you will be proude of</h1>
-      <div id="box" className="w-[40%] opacity-0">
-       <h3 className="lg:text-xl">Quad Tech's experience determines the right creative direction based on your company's positioning.</h3>
-       <h3 className="lg:text-xl">When it comes to marketing your b'ard or business we always make sure to loo De'cre we take o't. We are working together with you to design and execute Ennuvalive: dats driven creatives that win rési rusults.</h3>
+      <div className="w-[100%]   overflow-hidden absolute lg:top-[30%] lg:left-[45%] top-[35%] left-[5%]">
+        <div className="w-full flex flex-col gap-5 ">
+          <h1 ref={boxRef} className="text-4xl ml-[-800px] w-full">We create technologies you will be proude of</h1>
+          <div id="box" className="w-[40%] opacity-0">
+            <h3 className="lg:text-xl">Quad Tech's experience determines the right creative direction based on your company's positioning.</h3>
+            <h3 className="lg:text-xl">When it comes to marketing your b'ard or business we always make sure to loo De'cre we take o't. We are working together with you to design and execute Ennuvalive: dats driven creatives that win rési rusults.</h3>
+          </div>
+        </div>
       </div>
-    </div>
-   </div>
-  <div className="w-[100%]  overflow-hidden absolute lg:top-[55%] lg:left-[15%] top-[55%] left-[5%]">
-    <div  className="w-full flex flex-col gap-5 ">
-      <h1 ref={box1Ref} className="text-4xl ml-[-800px] w-full">We create technologies you will be proude of</h1>
-      <div id="box1" className="w-[40%] opacity-0">
-       <h3 className="lg:text-xl">Quad Tech's experience determines the right creative direction based on your company's positioning.</h3>
-       <h3 className="lg:text-xl">When it comes to marketing your b'ard or business we always make sure to loo De'cre we take o't. We are working together with you to design and execute Ennuvalive: dats driven creatives that win rési rusults.</h3>
+      <div className="w-[100%]  overflow-hidden absolute lg:top-[55%] lg:left-[15%] top-[55%] left-[5%]">
+        <div className="w-full flex flex-col gap-5 ">
+          <h1 ref={box1Ref} className="text-4xl ml-[-800px] w-full">We create technologies you will be proude of</h1>
+          <div id="box1" className="w-[40%] opacity-0">
+            <h3 className="lg:text-xl">Quad Tech's experience determines the right creative direction based on your company's positioning.</h3>
+            <h3 className="lg:text-xl">When it comes to marketing your b'ard or business we always make sure to loo De'cre we take o't. We are working together with you to design and execute Ennuvalive: dats driven creatives that win rési rusults.</h3>
+          </div>
+        </div>
       </div>
-    </div>
-   </div>
-    <div className="w-[80%] lg:w-[40%]  overflow-hidden flex flex-col gap-5 absolute lg:top-[75%] lg:left-[45%] top-[75%] left-[5%]">
-    <div  className="w-full flex flex-col gap-5">
-      <h1 ref={box2Ref} className="w-full text-3xl   ">We find the Creatives, so you don't have to</h1>
-      <div id="box2" className="w-[80%] opacity-0">
-       <h3 className="lg:text-xl">Quad Tech's experience determines the right creative direction based on your company's positioning.</h3>
-       <h3 className="lg:text-xl">When it comes to marketing your b'ard or business we always make sure to loo De'cre we take o't. We are working together with you to design and execute Ennuvalive: dats driven creatives that win rési rusults.</h3>
+      <div className="w-[80%] lg:w-[40%]  overflow-hidden flex flex-col gap-5 absolute lg:top-[75%] lg:left-[45%] top-[75%] left-[5%]">
+        <div className="w-full flex flex-col gap-5">
+          <h1 ref={box2Ref} className="w-full text-3xl   ">We find the Creatives, so you don't have to</h1>
+          <div id="box2" className="w-[80%] opacity-0">
+            <h3 className="lg:text-xl">Quad Tech's experience determines the right creative direction based on your company's positioning.</h3>
+            <h3 className="lg:text-xl">When it comes to marketing your b'ard or business we always make sure to loo De'cre we take o't. We are working together with you to design and execute Ennuvalive: dats driven creatives that win rési rusults.</h3>
+          </div>
+        </div>
       </div>
-       </div>
-   </div>
     </div>
   );
 };
