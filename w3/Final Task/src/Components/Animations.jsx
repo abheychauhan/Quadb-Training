@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "./Animations.css";
 
 gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
 const Animations = () => {
   const circleRef = useRef(null);
-  const svgRef = useRef(null);
   const boxRef = useRef(null);
 
   const box1Ref = useRef(null);
@@ -125,13 +125,12 @@ const Animations = () => {
       </div>
 
       <svg
-        width="1581px"
-        height="1250px"
+       
         viewBox="-100 -15 1491 1099"
         fill="none"
-        className=" hidden lg:block svg"
+        className="svg hidden lg:block"
       >
-        <rect className="lg:w-1281 lg:h-1090 w-full h-full" fill="transparent" />
+        <rect className="lg:w-1281 lg:h-1090px w-full h-full" fill="transparent" />
         <path
           id="customPath"
           d="
@@ -160,30 +159,30 @@ const Animations = () => {
 
       </svg>
 
-      <div className="w-[100%]   overflow-hidden absolute lg:top-[30%] lg:left-[45%] top-[35%] left-[5%]">
+      <div className="box1 w-[100%]   overflow-hidden absolute lg:top-[30%] lg:left-[45%] top-[35%] left-[5%]">
         <div className="w-full flex flex-col gap-5 ">
-          <h1 ref={boxRef} className="text-4xl ml-[-800px] w-full">We create technologies you will be proude of</h1>
-          <div id="box" className="w-[40%] opacity-0">
-            <h3 className="lg:text-xl">Quad Tech's experience determines the right creative direction based on your company's positioning.</h3>
-            <h3 className="lg:text-xl">When it comes to marketing your b'ard or business we always make sure to loo De'cre we take o't. We are working together with you to design and execute Ennuvalive: dats driven creatives that win rési rusults.</h3>
+          <h1 ref={boxRef} className="heading text-4xl ml-[-800px] w-full">We create technologies you will be proude of</h1>
+          <div id="box" className=" w-[40%] opacity-0">
+            <h3 className="texts lg:text-xl">Quad Tech's experience determines the right creative direction based on your company's positioning.</h3>
+            <h3 className="texts lg:text-xl">When it comes to marketing your b'ard or business we always make sure to loo De'cre we take o't. We are working together with you to design and execute Ennuvalive: dats driven creatives that win rési rusults.</h3>
           </div>
         </div>
       </div>
-      <div className="w-[100%]  overflow-hidden absolute lg:top-[55%] lg:left-[15%] top-[55%] left-[5%]">
+      <div className="box2 w-[100%]  overflow-hidden absolute lg:top-[55%] lg:left-[15%] top-[55%] left-[5%]">
         <div className="w-full flex flex-col gap-5 ">
-          <h1 ref={box1Ref} className="text-4xl ml-[-800px] w-full">We create technologies you will be proude of</h1>
-          <div id="box1" className="w-[40%] opacity-0">
-            <h3 className="lg:text-xl">Quad Tech's experience determines the right creative direction based on your company's positioning.</h3>
-            <h3 className="lg:text-xl">When it comes to marketing your b'ard or business we always make sure to loo De'cre we take o't. We are working together with you to design and execute Ennuvalive: dats driven creatives that win rési rusults.</h3>
+          <h1 ref={box1Ref} className="heading text-4xl ml-[-800px] w-full">We create technologies you will be proude of</h1>
+          <div id="box1" className="text w-[40%] opacity-0">
+            <h3 className="texts lg:text-xl">Quad Tech's experience determines the right creative direction based on your company's positioning.</h3>
+            <h3 className="texts lg:text-xl">When it comes to marketing your b'ard or business we always make sure to loo De'cre we take o't. We are working together with you to design and execute Ennuvalive: dats driven creatives that win rési rusults.</h3>
           </div>
         </div>
       </div>
-      <div className="w-[80%] lg:w-[40%]  overflow-hidden flex flex-col gap-5 absolute lg:top-[75%] lg:left-[45%] top-[75%] left-[5%]">
+      <div className="box3 w-[80%] lg:w-[40%]  overflow-hidden flex flex-col gap-5 absolute lg:top-[75%] lg:left-[45%] top-[75%] left-[5%]">
         <div className="w-full flex flex-col gap-5">
-          <h1 ref={box2Ref} className="w-full text-3xl   ">We find the Creatives, so you don't have to</h1>
-          <div id="box2" className="w-[80%] opacity-0">
-            <h3 className="lg:text-xl">Quad Tech's experience determines the right creative direction based on your company's positioning.</h3>
-            <h3 className="lg:text-xl">When it comes to marketing your b'ard or business we always make sure to loo De'cre we take o't. We are working together with you to design and execute Ennuvalive: dats driven creatives that win rési rusults.</h3>
+          <h1 ref={box2Ref} className=" heading w-full text-3xl   ">We find the Creatives, so you don't have to</h1>
+          <div id="box2" className=" w-[80%] opacity-0">
+            <h3 className="texts lg:text-xl">Quad Tech's experience determines the right creative direction based on your company's positioning.</h3>
+            <h3 className="texts lg:text-xl">When it comes to marketing your b'ard or business we always make sure to loo De'cre we take o't. We are working together with you to design and execute Ennuvalive: dats driven creatives that win rési rusults.</h3>
           </div>
         </div>
       </div>
